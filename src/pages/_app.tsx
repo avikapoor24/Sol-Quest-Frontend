@@ -13,8 +13,8 @@ import type { AppProps } from "next/app";
 import { useMemo } from "react";
 import "./globals.css";
 
-import { Provider } from 'react-redux';
-import { store } from '../features/store';
+import { Provider } from "react-redux";
+import { store } from "../features/store";
 
 export default function App({ Component, pageProps }: AppProps) {
   const wallets = useMemo(
@@ -31,11 +31,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <Provider store={store}>
-    <ConnectionProvider endpoint={endpoint}>
-      <WalletProvider wallets={wallets} autoConnect>
-        <Component {...pageProps} />
-      </WalletProvider>
-    </ConnectionProvider>
+      <ConnectionProvider endpoint={endpoint}>
+        <WalletProvider wallets={wallets} autoConnect>
+          <Component {...pageProps} />
+        </WalletProvider>
+      </ConnectionProvider>
     </Provider>
   );
 }

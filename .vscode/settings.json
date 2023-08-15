@@ -16,5 +16,8 @@
   },
   "[css]": {
     "editor.defaultFormatter": "null"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
