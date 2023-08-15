@@ -7,13 +7,13 @@ const Carousel = () => {
   const settings = {
     infinite: true,
     autoplay: true,
-    speed: 1000,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
   };
   return (
-    <div className=" h-[50vh] w-[70vw]">
+    <div className=" h-[30vh] w-[50vw]">
       <Slider {...settings}>
         <div className="flex justify-center">
           <CarouselCard

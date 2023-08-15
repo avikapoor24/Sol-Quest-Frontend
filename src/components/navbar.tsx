@@ -2,6 +2,7 @@ import { selectedWalletAddresSelector } from "@/features/selector";
 import { adventurer } from "@dicebear/collection";
 import { createAvatar } from "@dicebear/core";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 const Wallets = dynamic(() => import("@/components/wallet"), { ssr: false });
@@ -18,7 +19,7 @@ function Navbar() {
       }).toDataUriSync();
     } else {
       return createAvatar(adventurer, {
-        seed: "riverr_x",
+        seed: "2k9AojehMDygHouVoqQgV3rJdfEM3BFR6SZRvsFJwR5v",
         size: 128,
         scale: 150,
       }).toDataUriSync();
@@ -28,9 +29,9 @@ function Navbar() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <Link href={`/`} className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
           Sol-Quest
-        </a>
+        </Link>
       </div>
       <div className="flex-none gap-2">
         <Wallets />

@@ -9,7 +9,7 @@ function Wallet() {
   const [popUp, setPopUp] = useState(false);
 
   console.log(wallets);
-  console.log("public key", publicKey);
+  console.log("public key", publicKey?.toBase58());
 
   const dispatch = useDispatch();
 
@@ -70,7 +70,7 @@ function Wallet() {
         </button>
 
         {wallets.filter((wallet) => wallet.readyState === "Installed").length >
-        0 ? (
+          0 ? (
           wallets
             .filter((wallet) => wallet.readyState === "Installed")
             .map((wallet) => (
