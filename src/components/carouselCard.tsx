@@ -16,12 +16,8 @@ function CarouselCard(cardInfro: cardInfo) {
 			<div className="m-2 w-auto">
 				<div className=" flex  h-[30vh] w-auto content-between rounded-[16px] bg-white text-[#000000] lg:h-[50vh] ">
 					<div className=" grid w-full content-around p-5 py-8">
-						<h4 className="text-textxl  lg:text-text3xl">
-							{title}
-						</h4>
-						<p className="text-sm  lg:text-textMedium3 ">
-							{desc}
-						</p>
+						<h4 className="text-textxl  lg:text-text3xl">{title}</h4>
+						<p className="text-sm  lg:text-textMedium3 ">{desc}</p>
 						<button
 							type="button"
 							className="mt-2 h-8 w-4/5 rounded-[12px] bg-gradient-to-r from-[#296BBD] to-[#AC85FF]   p-[5px]   text-[16px] text-white lg:h-10 lg:w-full lg:text-[18px]"
@@ -39,7 +35,7 @@ function CarouselCard(cardInfro: cardInfo) {
 				</div>
 			</div>
 		</Link>
-	)
+	);
 }
 
 export default CarouselCard;

@@ -3,12 +3,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import CarouselCard from "./carouselCard";
 
-
-
 const Carousel = () => {
 	const settings = {
 		infinite: true,
-		lazyLoad: true,
 		autoplay: true,
 		speed: 1000,
 		slidesToShow: 1,
@@ -54,8 +51,6 @@ const Carousel = () => {
 						image={"link"}
 					/>
 				</div>
-
-
 			</Slider>
 		</div>
 	);
