@@ -8,10 +8,8 @@ export interface State {
 
 const initialState: State = {
   value: 0,
-  walletAddress: '',
+  walletAddress: "",
 };
-
-
 
 export const questSlice = createSlice({
   name: "sol-Quest",
@@ -36,5 +34,3 @@ export const questSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const reducer = questSlice.reducer;
 export const actions = questSlice.actions;
-
-

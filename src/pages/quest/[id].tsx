@@ -1,8 +1,5 @@
-
 function id() {
-	return (
-		<div>[id]</div>
-	)
+  return <div>[id]</div>;
 }
 
-export default id
+export default id;

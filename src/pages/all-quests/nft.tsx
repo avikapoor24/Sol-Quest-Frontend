@@ -1,8 +1,5 @@
-
 function nft() {
-	return (
-		<div>nft</div>
-	)
+  return <div>nft</div>;
 }
 
-export default nft
+export default nft;
