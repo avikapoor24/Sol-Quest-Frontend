@@ -1,6 +1,8 @@
+import { actions } from "@/features/slice";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Image from "next/image";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 function Wallet() {
   const { select, wallets, publicKey, disconnect } = useWallet();
@@ -8,11 +10,20 @@ function Wallet() {
 
   console.log(wallets);
   console.log("public key", publicKey);
+
+
+  const dispatch = useDispatch();
+
+  if (publicKey) {
+    dispatch(actions.setWalletAddress(publicKey.toBase58()));
+  }
+
+
   return (
     <div>
       {!publicKey ? (
         <button
-          className="btn btn-accent"
+          className="rounded-[12px] bg-gradient-to-r from-purple-400 to-pink-600  p-[10px]   text-[16px] text-white m-2"
           onClick={() => {
             setPopUp(true);
           }}
@@ -21,8 +32,10 @@ function Wallet() {
         </button>
       ) : (
         <div>
-          <button className="btn btn-accent" onClick={disconnect}>
-            disconnect wallet
+          <button
+            className="rounded-[12px] bg-gradient-to-r from-[#296BBD] to-[#AC85FF]   p-[10px]   text-[16px] text-white m-2"
+            onClick={disconnect}>
+            {publicKey.toBase58().slice(0, 3) + "..." + publicKey.toBase58().slice(-2)}
           </button>
         </div>
       )}
@@ -56,7 +69,7 @@ function Wallet() {
         </button>
 
         {wallets.filter((wallet) => wallet.readyState === "Installed").length >
-        0 ? (
+          0 ? (
           wallets
             .filter((wallet) => wallet.readyState === "Installed")
             .map((wallet) => (

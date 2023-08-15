@@ -1,9 +1,7 @@
 import Carousel from "@/components/carousel";
-import dynamic from "next/dynamic";
 import { useDispatch, useSelector } from "react-redux";
 import { selectedCounterSelector } from "../features/selector";
-import { decrement, increment } from "../features/slice";
-const Wallets = dynamic(() => import("@/components/wallet"), { ssr: false });
+import { actions } from "../features/slice";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -12,19 +10,18 @@ export default function Home() {
   return (
     <div className="text-[40px]">
       <h1>hello</h1>
-      <Wallets />
       <div>
         <div>
           <button
             aria-label="Increment value"
-            onClick={() => dispatch(increment())}
+            onClick={() => dispatch(actions.increment())}
           >
             Increment
           </button>
           <span>{count}</span>
           <button
             aria-label="Decrement value"
-            onClick={() => dispatch(decrement())}
+            onClick={() => dispatch(actions.decrement())}
           >
             Decrement
           </button>
