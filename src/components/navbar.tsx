@@ -29,7 +29,10 @@ function Navbar() {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <Link href={`/`} className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+        <Link
+          href={`/`}
+          className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+        >
           Sol-Quest
         </Link>
       </div>

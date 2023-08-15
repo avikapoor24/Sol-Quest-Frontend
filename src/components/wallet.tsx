@@ -70,7 +70,7 @@ function Wallet() {
         </button>
 
         {wallets.filter((wallet) => wallet.readyState === "Installed").length >
-          0 ? (
+        0 ? (
           wallets
             .filter((wallet) => wallet.readyState === "Installed")
             .map((wallet) => (

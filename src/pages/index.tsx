@@ -16,7 +16,7 @@ export default function Home() {
         <Carousel />
       </div>
       <div>
-        <Link href={`/explore`} > Explore</Link>
+        <Link href={`/explore`}> Explore</Link>
       </div>
     </div>
   );
