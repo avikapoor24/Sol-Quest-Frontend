@@ -17,7 +17,7 @@ function Id() {
       <div className="w-[70vw]  rounded-md grid md:grid-cols-8 ">
 
         {/*  */}
-        <div className=" grid lg:col-span-6 col-span-8 mr-5 overflow-y-scroll no-scrollbar">
+        <div className=" grid xl:col-span-6 col-span-8 mr-5 overflow-y-scroll no-scrollbar">
           {/*Title  */}
           <div className="flex justify-between items-center mx-5 my-2 h-[60px]">
             <h2 className="card-title  mx-3">
@@ -73,7 +73,7 @@ function Id() {
           </div>
         </div>
         {/*  */}
-        <div className=" md:col-span-2 overflow-y-scroll no-scrollbar col-span-8">
+        <div className=" xl:col-span-2 overflow-y-scroll no-scrollbar col-span-8">
           <h1 className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             {" "}
             Reward Pool
