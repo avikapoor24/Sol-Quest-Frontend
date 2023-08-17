@@ -25,10 +25,12 @@ export default function Home() {
           </div>
           <div className="flex-none gap-2">
             <div>
-              <Link href={'/explore'} className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <Link
+                href={"/explore"}
+                className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+              >
                 Explore
               </Link>
-
             </div>
           </div>
         </div>
@@ -45,10 +47,12 @@ export default function Home() {
           </div>
           <div className="flex-none gap-2">
             <div>
-              <Link href={'/explore'} className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
+              <Link
+                href={"/explore"}
+                className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"
+              >
                 Explore
               </Link>
-
             </div>
           </div>
         </div>
@@ -56,8 +60,5 @@ export default function Home() {
         <CarouselNFT />
       </div>
     </div>
-
-
-
   );
 }
