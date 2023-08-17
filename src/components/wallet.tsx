@@ -43,7 +43,7 @@ function Wallet() {
       <div
         className={
           popUp && !publicKey
-            ? "artboard artboard-horizontal phone-1"
+            ? "artboard artboard-horizontal phone-1 absolute top-[30%] left-[30%] z-50 bg-white border border-black rounded-lg"
             : "hidden"
         }
       >
@@ -70,7 +70,7 @@ function Wallet() {
         </button>
 
         {wallets.filter((wallet) => wallet.readyState === "Installed").length >
-        0 ? (
+          0 ? (
           wallets
             .filter((wallet) => wallet.readyState === "Installed")
             .map((wallet) => (
