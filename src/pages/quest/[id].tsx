@@ -31,7 +31,9 @@ function Id() {
             <div>
               <button
                 className="rounded-[12px] bg-gradient-to-r from-purple-400 to-pink-600 opacity-90  p-[10px]   text-[16px] text-white m-2"
-                onClick={() => { navigator.clipboard.writeText(questID) }}
+                onClick={() => {
+                  navigator.clipboard.writeText(questID);
+                }}
               >
                 <Image src={Share} alt="share-icon" height={22} width={22} />
               </button>
@@ -80,12 +82,20 @@ function Id() {
             <RewardBlock />
           </div>
           <div>
-            <h2 className="card-title h-[48px] m-5">
-              Questers
-            </h2>
+            <h2 className="card-title h-[48px] m-5">Questers</h2>
             <div className=" grid grid-cols-5">
-              <Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar /><Avatar />
-
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
+              <Avatar />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ function CarouselCard(cardInfro: cardInfo) {
   return (
     <Link href={`/quest/${id}`}>
       <div className="m-2 w-auto">
-        <div className=" flex  h-[30vh] w-auto content-between rounded-[16px] bg-white text-[#000000] lg:h-[50vh] ">
+        <div className=" flex  h-[35vh] w-auto content-between rounded-[16px] bg-white text-[#000000] lg:h-[45vh] ">
           <div className=" grid w-full content-around p-5 py-8">
             <h4 className="text-textxl  lg:text-text3xl">{title}</h4>
             <p className="text-sm  lg:text-textMedium3 ">{desc}</p>

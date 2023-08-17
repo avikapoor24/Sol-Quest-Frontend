@@ -1,8 +1,5 @@
-
 function Countdown() {
-	return (
-		<div>countdown</div>
-	)
+  return <div>countdown</div>;
 }
 
-export default Countdown
+export default Countdown;
