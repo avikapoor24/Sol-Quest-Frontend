@@ -8,7 +8,7 @@ export default function Home() {
   const count = useSelector(selectedCounterSelector);
 
   return (
-    <div className="">
+    <div className=" no-scrollbar ">
       <div
         className="mt-10 flex
 				items-center justify-center"
