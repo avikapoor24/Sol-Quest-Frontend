@@ -4,11 +4,13 @@ import { createSlice } from "@reduxjs/toolkit";
 export interface State {
   value: number;
   walletAddress: string;
+  avatar: string;
 }
 
 const initialState: State = {
   value: 0,
   walletAddress: "",
+  avatar: "",
 };
 
 export const questSlice = createSlice({
@@ -26,6 +28,10 @@ export const questSlice = createSlice({
     },
     setWalletAddress: (state, action: PayloadAction<string>) => {
       state.walletAddress = action.payload;
+      return state;
+    },
+    setAvatar: (state, action: PayloadAction<string>) => {
+      state.avatar = action.payload;
       return state;
     },
   },

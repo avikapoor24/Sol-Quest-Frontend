@@ -15,7 +15,6 @@ function Id() {
   return (
     <div className=" grid  justify-center ">
       <div className="w-[70vw]  rounded-md grid md:grid-cols-8 ">
-
         {/*  */}
         <div className=" grid xl:col-span-6 col-span-8 mr-5 overflow-y-scroll no-scrollbar">
           {/*Title  */}

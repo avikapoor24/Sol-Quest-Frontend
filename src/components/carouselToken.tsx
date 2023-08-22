@@ -5,7 +5,7 @@ function CarouselToken() {
   const settings = {
     infinite: true,
     autoplay: true,
-    speed: 500,
+    speed: 800,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
