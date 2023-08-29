@@ -5,6 +5,7 @@ import RewardBlock from "@/components/rewardBlock";
 import Socials from "@/components/socials";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Swal from "sweetalert2";
 import Share from "../../assets/Social/icons8-share.svg";
 
 function Id() {
@@ -33,6 +34,8 @@ function Id() {
                 className="rounded-[12px] bg-gradient-to-r from-purple-400 to-pink-600 opacity-90  p-[10px]   text-[16px] text-white m-2"
                 onClick={() => {
                   navigator.clipboard.writeText(questID);
+                  Swal.fire('Quest Copied')
+
                 }}
               >
                 <Image src={Share} alt="share-icon" height={22} width={22} />
