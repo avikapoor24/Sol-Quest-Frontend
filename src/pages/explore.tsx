@@ -3,7 +3,6 @@ import { default as ExplorePageTokenCards } from "@/components/explorePageTokenC
 import { useGetAllQuestsQuery } from "@/features/api";
 
 function Explore() {
-
   const allQuest = useGetAllQuestsQuery();
   console.log("ALL QUEST", allQuest);
 

@@ -21,14 +21,18 @@ const Countdown = ({ dateTime }: TimerProps) => {
 
     const remainingDayTime = countdownDateTime - currentTime;
 
-    let totalDays = Math.floor(remainingDayTime / (1000 * 60 * 60 * 24)).toString();
+    let totalDays = Math.floor(
+      remainingDayTime / (1000 * 60 * 60 * 24),
+    ).toString();
     let totalHours = Math.floor(
       (remainingDayTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
     ).toString();
     let totalMinutes = Math.floor(
       (remainingDayTime % (1000 * 60 * 60)) / (1000 * 60),
     ).toString();
-    let totalSeconds = Math.floor((remainingDayTime % (1000 * 60)) / 1000).toString();
+    let totalSeconds = Math.floor(
+      (remainingDayTime % (1000 * 60)) / 1000,
+    ).toString();
 
     if (parseInt(totalDays) >= 0 && parseInt(totalDays) <= 9) {
       totalDays = `0${totalDays}`;
@@ -104,17 +108,20 @@ const Countdown = ({ dateTime }: TimerProps) => {
           </div>
           <div className="flex flex-col">
             <span className="countdown font-mono text-5xl">
-              {countdownTime.countdownHours}</span>
+              {countdownTime.countdownHours}
+            </span>
             hours
           </div>
           <div className="flex flex-col">
             <span className="countdown font-mono text-5xl">
-              {countdownTime.countdownMinutes}</span>
+              {countdownTime.countdownMinutes}
+            </span>
             min
           </div>
           <div className="flex flex-col">
             <span className="countdown font-mono text-5xl">
-              {countdownTime.countdownSeconds}</span>
+              {countdownTime.countdownSeconds}
+            </span>
             sec
           </div>
         </div>
