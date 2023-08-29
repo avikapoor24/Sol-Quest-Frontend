@@ -78,7 +78,7 @@ function Id() {
             Reward Pool
           </h1>
           <div>
-            <Countdown />
+            <Countdown dateTime={"2024-08-19T16:23:12.826+00:00"} />
           </div>
           <div className=" flex justify-center">
             <RewardBlock />

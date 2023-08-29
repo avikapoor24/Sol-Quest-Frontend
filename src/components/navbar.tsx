@@ -11,7 +11,6 @@ function Navbar() {
   const walletAddress = useSelector(selectedWalletAddresSelector);
   const dispatch = useDispatch();
 
-
   const avatar = useMemo(() => {
     if (walletAddress !== "") {
       return createAvatar(adventurer, {
@@ -26,9 +25,7 @@ function Navbar() {
         scale: 150,
       }).toDataUriSync();
     }
-
   }, [walletAddress !== ""]);
-
 
   return (
     <div className="navbar bg-base-100">
@@ -46,17 +43,11 @@ function Navbar() {
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
-              <Link
-                href={`/profile`} >
+              <Link href={`/profile`}>
                 <img src={avatar} />
               </Link>
-
             </div>
           </label>
-
-
-
-
         </div>
       </div>
     </div>

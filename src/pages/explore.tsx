@@ -1,7 +1,12 @@
 import ExplorePageNFTCards from "@/components/explorePageNFTCards";
 import { default as ExplorePageTokenCards } from "@/components/explorePageTokenCards";
+import { useGetAllQuestsQuery } from "@/features/api";
 
 function Explore() {
+
+  const allQuest = useGetAllQuestsQuery();
+  console.log("ALL QUEST", allQuest);
+
   return (
     <div className=" grid  justify-center ">
       <div className="navbar bg-base-100 xxl:w-[70vw] bg-white rounded-md ">
