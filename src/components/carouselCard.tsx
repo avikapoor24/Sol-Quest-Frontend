@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import tamplate from "../assets/temp.jpg";
+
 interface cardInfo {
   id: string;
   title: string;
@@ -13,8 +13,8 @@ function CarouselCard(cardInfro: cardInfo) {
   const { id, title, desc, reward, image } = cardInfro;
   return (
     <Link href={`/quest/${id}`}>
-      <div className="m-2 w-auto  ">
-        <div className=" flex  h-[35vh] w-auto content-between rounded-[16px] bg-white text-[#000000] lg:h-[45vh]  ">
+      <div className="m-2 w-auto">
+        <div className=" flex  h-[35vh] w-auto content-between rounded-[16px] bg-white text-[#000000] lg:h-[45vh] ">
           <div className=" grid w-full content-around p-5 py-8">
             <h4 className="text-textxl  lg:text-text3xl">{title}</h4>
             <p className="text-sm  lg:text-textMedium3 ">{desc}</p>
@@ -26,10 +26,9 @@ function CarouselCard(cardInfro: cardInfo) {
             </button>
           </div>
           <Image
-            src={tamplate}
-            className=" h-auto w-[100%] rounded-[30px] bg-[##212121]  p-4"
+            src="https://picsum.photos/300"
+            className=" h-auto w-[100%] rounded-[30px] bg-[##212121] object-fill p-4"
             alt="Picture of the author"
-            priority
             width={120}
             height={20}
           />
