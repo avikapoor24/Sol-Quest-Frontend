@@ -17,7 +17,7 @@ export default function Home() {
 
       {/*  */}
       <div className=" grid items-center justify-center my-20 ">
-        <div className="navbar bg-base-100 xxl:w-[70vw]  rounded-md ">
+        <div className="navbar  xxl:w-[70vw]  rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 ">
           <div className="flex-1">
             <a className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               Recommended :
@@ -38,8 +38,8 @@ export default function Home() {
         <CarouselToken />
       </div>
 
-      <div className=" grid items-center justify-center my-20 ">
-        <div className="navbar bg-base-100 xxl:w-[70vw]  rounded-md ">
+      <div className=" grid items-center justify-center mt-20  pb-20">
+        <div className="navbar  xxl:w-[70vw]  rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 ">
           <div className="flex-1">
             <a className="btn btn-ghost text-transparent font-bold  text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
               NFT Collection :

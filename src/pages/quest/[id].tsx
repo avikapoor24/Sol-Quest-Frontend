@@ -14,7 +14,7 @@ function Id() {
   const avatar = "https://api.dicebear.com/6.x/thumbs/svg?seed=Cleo";
 
   return (
-    <div className=" grid  justify-center ">
+    <div className=" grid  justify-center pb-10">
       <div className="w-[70vw]  rounded-md grid md:grid-cols-8 ">
         {/*  */}
         <div className=" grid xl:col-span-6 col-span-8 mr-5 overflow-y-scroll no-scrollbar">
@@ -34,8 +34,7 @@ function Id() {
                 className="rounded-[12px] bg-gradient-to-r from-purple-400 to-pink-600 opacity-90  p-[10px]   text-[16px] text-white m-2"
                 onClick={() => {
                   navigator.clipboard.writeText(questID);
-                  Swal.fire('Quest Copied')
-
+                  Swal.fire("Quest Copied");
                 }}
               >
                 <Image src={Share} alt="share-icon" height={22} width={22} />

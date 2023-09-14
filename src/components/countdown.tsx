@@ -91,7 +91,7 @@ const Countdown = ({ dateTime }: TimerProps) => {
   const timeInterval = setTimeout(myTimer, 1000);
 
   return (
-    <div className="w-[509px] ">
+    <div className=" flex items-center justify-center ">
       {countdownEnded && (
         <div className="grid grid-flow-col gap-[12px] text-center auto-cols-max m-5">
           Timer Ended

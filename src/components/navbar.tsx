@@ -28,7 +28,7 @@ function Navbar() {
   }, [walletAddress !== ""]);
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20">
       <div className="flex-1">
         <Link
           href={`/`}

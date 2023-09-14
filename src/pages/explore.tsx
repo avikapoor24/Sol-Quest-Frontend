@@ -33,7 +33,7 @@ function Explore() {
 
       {/* token area */}
 
-      <div className="w-70vw mt-10 grid xl:grid-cols-3 md:grid-cols-2">
+      <div className="w-70vw mt-10 grid xl:grid-cols-3 md:grid-cols-2 ">
         <ExplorePageTokenCards />
         <ExplorePageTokenCards />
         <ExplorePageTokenCards />
